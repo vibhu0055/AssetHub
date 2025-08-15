@@ -1,12 +1,46 @@
-# React + Vite
+# 💼 AssetHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AssetHub is a web app built with **React**, **Tailwind CSS**, and **Vite** that lets you:
 
-Currently, two official plugins are available:
+- 🔍 View **live crypto and stock prices**
+- ➕ Add assets to your **personal portfolio** with your **buying price**
+- 📊 Track your **total profit or loss** in real-time
+- 💾 Save all your data in the browser's **local storage** — no login or backend required
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Demo:https://vibhu0055.github.io/AssetHub/
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Live price updates for **cryptocurrencies and stocks**
+- Simple, clean UI with **Tailwind CSS**
+- Add assets to your portfolio with custom buying prices
+- See overall **portfolio value**, **profit/loss**
+- Data persistence using **localStorage**
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- LocalStorage API
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/vibhu0055/AssetHub.git
+
+# Go to the project folder
+cd AssetHub
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev

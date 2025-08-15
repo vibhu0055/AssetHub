@@ -47,53 +47,53 @@ const Crypto = () => {
 
                 <div className="border border-gray-200 rounded-xl bg-white col-span-12 h-auto pt-2 overflow-auto">
                     <table className="min-w-full table-fixed text-left">
-    <thead>
-        <tr className="bg-white text-gray-900">
-            <th className="px-5 py-5">Assets</th>
-            <th className="px-5 py-5">Current Price</th>
-            <th className="px-5 py-5">24hr Change</th>
-        </tr>
-    </thead>
-    <tbody className="text-gray-900">
-        {cryptoData.length > 0 ? (
-            cryptoData.map((crypto, index) => (
-                <tr className="border-t border-gray-300 hover:bg-gray-100 h-16" key={index}>
-                    <td className="px-4">
-                        <div className="flex items-center gap-x-2">
-                            <img
-                                src={crypto.image || 'https://via.placeholder.com/20'}
-                                className="w-5 h-5"
-                                alt={`${crypto.name} logo`}
-                            />
-                            <span>
-                                {crypto.name} <span className="text-xs text-gray-600">{crypto.symbol.toUpperCase()}</span>
-                            </span>
-                        </div>
-                    </td>
+                        <thead>
+                            <tr className="bg-white text-gray-900">
+                                <th className="px-5 py-5">Assets</th>
+                                <th className="px-5 py-5">Current Price</th>
+                                <th className="px-5 py-5">24hr Change</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-gray-900">
+                            {cryptoData.length > 0 ? (
+                                cryptoData.map((crypto, index) => (
+                                    <tr className="border-t border-gray-300 hover:bg-gray-100 h-16" key={index}>
+                                        <td className="px-4">
+                                            <div className="flex items-center gap-x-2">
+                                                <img
+                                                    src={crypto.image || 'https://via.placeholder.com/20'}
+                                                    className="w-5 h-5"
+                                                    alt={`${crypto.name} logo`}
+                                                />
+                                                <span>
+                                                    {crypto.name} <span className="text-xs text-gray-600">{crypto.symbol.toUpperCase()}</span>
+                                                </span>
+                                            </div>
+                                        </td>
 
-                    <td className={`px-4 ${crypto.price_change_percentage_24h > 0 ? 'text-green-400' : 'text-red-500'}`}>
-                        ${crypto.current_price}
-                    </td>
+                                        <td className={`px-4 ${crypto.price_change_percentage_24h > 0 ? 'text-green-400' : 'text-red-500'}`}>
+                                            ${crypto.current_price}
+                                        </td>
 
-                    <td className={`px-4 ${crypto.price_change_percentage_24h > 0 ? 'text-green-400' : 'text-red-500'}`}>
-                        <div className="flex items-center space-x-1">
-                            {crypto.price_change_percentage_24h > 0 ? (
-                                <FaArrowUp className="mr-1" />
+                                        <td className={`px-4 ${crypto.price_change_percentage_24h > 0 ? 'text-green-400' : 'text-red-500'}`}>
+                                            <div className="flex items-center space-x-1">
+                                                {crypto.price_change_percentage_24h > 0 ? (
+                                                    <FaArrowUp className="mr-1" />
+                                                ) : (
+                                                    <FaArrowDown className="mr-1" />
+                                                )}
+                                                <span>{crypto.price_change_percentage_24h.toFixed(2)}%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))
                             ) : (
-                                <FaArrowDown className="mr-1" />
+                                <tr>
+                                    <td colSpan="3" className="text-center p-4">Loading...</td>
+                                </tr>
                             )}
-                            <span>{crypto.price_change_percentage_24h.toFixed(2)}%</span>
-                        </div>
-                    </td>
-                </tr>
-            ))
-        ) : (
-            <tr>
-                <td colSpan="3" className="text-center p-4">Loading...</td>
-            </tr>
-        )}
-    </tbody>
-</table>
+                        </tbody>
+                    </table>
 
 
 
