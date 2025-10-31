@@ -3,6 +3,8 @@
 **AssetHub** is a simple and responsive React web app that lets you **track live crypto and stock prices** and manage your own **portfolio** — all stored locally on your device.  
 It helps you see your **current profit or loss** without needing to sign up or connect to any external account.
 
+🔗 Live Demo: https://vibhu0055.github.io/AssetHub/
+
 ---
 
 ##  Features
