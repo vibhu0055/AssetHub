@@ -1,12 +1,29 @@
-# React + Vite
+# AssetHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AssetHub** is a simple and responsive React web app that lets you **track live crypto and stock prices** and manage your own **portfolio** — all stored locally on your device.  
+It helps you see your **current profit or loss** without needing to sign up or connect to any external account.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+-  Live crypto and stock price tracking  
+-  Create and manage your own portfolio  
+-  Real-time profit/loss calculation  
+-  Data saved in **localStorage** (no backend needed!)  
+-  Built with **Vite** for super-fast development  
+-  Styled with **Tailwind CSS**  
+-  Smooth navigation using **React Router**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Tech Stack
+
+- **Frontend:** React (Vite)
+- **Styling:** Tailwind CSS
+- **Routing:** React Router DOM
+- **Data Storage:** Browser Local Storage
+- **APIs:** Crypto/Stock price APIs (public/free)
+
+---
+
